@@ -1,0 +1,35 @@
+{
+  "name": "fistorage",
+  "version": "1.0.0",
+  "description": "JSON storage with API",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon --config nodemon.json src/index.js"
+  },
+  "keywords": [
+    "fistorage",
+    "json",
+    "database",
+    "storage",
+    "api"
+  ],
+  "author": {
+    "name": "Feri Irawan",
+    "url": "http://github.com/feri-irawan"
+  },
+  "license": "MIT",
+  "homepage": "https://fistorage.glitch.com",
+  "repository": {
+    "url": "https://github.com/feri-irawan/fistorage"
+  },
+  "bugs": {
+    "url": "https://github.com/feri-irawan/fistorage/issues"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^10.0.0",
+    "fastify": "^3.25.2",
+    "uuid": "^8.3.2"
+  }
+}

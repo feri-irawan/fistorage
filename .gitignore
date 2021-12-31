@@ -1,0 +1,8 @@
+# Node modules
+node_modules/
+
+# Environments
+.env
+
+# Data files
+src/data/*
