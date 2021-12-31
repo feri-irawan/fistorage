@@ -16,7 +16,7 @@ Ikuti langkah berikut untuk langsung membuat akun, membuat storage dan mengambil
 ### Membuat Akun
 
 ```curl
-curl -X POST 'http://localhost:5000/users/signup' \
+curl -X POST 'https://fistorage.glitch.me/users/signup' \
 -H 'Content-Type: application/json' \
 -d '{
     "name":"<YOUR NAME>",
@@ -28,7 +28,7 @@ curl -X POST 'http://localhost:5000/users/signup' \
 ### Membuat Storage
 
 ```curl
-curl -X POST 'http://localhost:5000/storages/create' \
+curl -X POST 'https://fistorage.glitch.me/storages/create' \
 -H 'Authorization: token <YOUR TOKEN>' \
 -H 'Content-Type: application/json' \
 -d '{
@@ -41,7 +41,7 @@ curl -X POST 'http://localhost:5000/storages/create' \
 ### Mendapatkan Konten Storage
 
 ```curl
-curl -X GET 'http://localhost:5000/storages/contents/<STORAGE ID>' \
+curl -X GET 'https://fistorage.glitch.me/storages/contents/<STORAGE ID>' \
 -H 'Authorization: token <YOUR TOKEN>'
 ```
 
@@ -69,7 +69,7 @@ POST /users/signup
 **Contoh:**
 
 ```curl
-curl -X POST 'http://localhost:5000/users/signup' \
+curl -X POST 'https://fistorage.glitch.me/users/signup' \
 -H 'Content-Type: application/json' \
 -d '{
     "name":"<YOUR NAME>",
@@ -95,7 +95,7 @@ POST /users/login
 **Contoh:**
 
 ```curl
-curl -X POST 'http://localhost:5000/users/login' \
+curl -X POST 'https://fistorage.glitch.me/users/login' \
 -H 'Content-Type: application/json' \
 -d '{
     "username":"<YOUR USERNAME>",
@@ -124,7 +124,7 @@ PUT /users/update
 **Contoh (hanya update password):**
 
 ```curl
-curl -X PUT 'http://localhost:5000/users/update' \
+curl -X PUT 'https://fistorage.glitch.me/users/update' \
 -H 'Content-Type: application/json' \
 -d '{
     "username":"<YOUR USERNAME>",
@@ -158,7 +158,7 @@ POST /storages/create
 **Contoh:**
 
 ```curl
-curl -X POST 'http://localhost:5000/storages/create' \
+curl -X POST 'https://fistorage.glitch.me/storages/create' \
 -H 'Content-Type: application/json' \
 -H 'Authorization: token <YOUR TOKEN>' \
 -d '{
@@ -184,7 +184,7 @@ GET /storages/contents/{id}
 **Contoh:**
 
 ```curl
-curl -X GET 'http://localhost:5000/storages/contents/76a998d1-26e5-4fd0-8db5-95b309387fe6' \
+curl -X GET 'https://fistorage.glitch.me/storages/contents/76a998d1-26e5-4fd0-8db5-95b309387fe6' \
 -H 'Authorization: token <YOUR TOKEN>'
 ```
 
@@ -208,7 +208,7 @@ PUT /storages/update/{id}
 **Contoh:**
 
 ```curl
-curl -X POST 'http://localhost:5000/storages/update/76a998d1-26e5-4fd0-8db5-95b309387fe6' \
+curl -X POST 'https://fistorage.glitch.me/storages/update/76a998d1-26e5-4fd0-8db5-95b309387fe6' \
 -H 'Authorization: token <YOUR TOKEN>' \
 -H 'Content-Type: application/json' \
 -d '{
@@ -240,7 +240,7 @@ DELETE /storages/delete/{id}
 **Contoh:**
 
 ```curl
-curl -X DELETE 'http://localhost:5000/storages/delete/76a998d1-26e5-4fd0-8db5-95b309387fe6' \
+curl -X DELETE 'https://fistorage.glitch.me/storages/delete/76a998d1-26e5-4fd0-8db5-95b309387fe6' \
 -H 'Authorization: token <YOUR TOKEN>'
 ```
 
