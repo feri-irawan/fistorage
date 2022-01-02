@@ -1,6 +1,6 @@
 exports.index = (req, rep) => {
   return {
     code: 200,
-    title: 'Fistorage - Online JSON Storage'
+    title: 'Fistorage - JSON storage with API'
   }
 }

@@ -1,11 +1,5 @@
 // Controllers
-const {
-  index,
-  signup,
-  login,
-  newToken,
-  update
-} = require('../controllers/users')
+const { index, signup, login, update } = require('../controllers/users')
 
 // Schemas
 const schemas = require('../controllers/schemas/users')

@@ -4,6 +4,9 @@ const fastify = require('fastify')
 const app = fastify({ logger: true })
 const PORT = process.env.PORT || 3000
 
+// Cors
+app.register(require('fastify-cors'))
+
 // Rute
 app.register(require('./routes'))
 app.register(require('./routes/users'), { prefix: '/users' })
